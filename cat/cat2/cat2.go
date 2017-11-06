@@ -22,7 +22,7 @@ func doCat() error {
 		}
 		sc := bufio.NewScanner(f)
 		for sc.Scan() {
-			fmt.Println(sc.Text())
+			fmt.Print(sc.Text())
 		}
 		if err := sc.Err(); err != nil {
 			return fmt.Errorf("")
